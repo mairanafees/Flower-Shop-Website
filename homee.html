@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Bliss Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const learnMoreButton = $('<a>', {
+                href: 'javascript:void(0)',
+                class: 'main_btn',
+                text: 'Learn More'
+            }).appendTo('.main_tag p');
+
+            learnMoreButton.click(function() {
+                $('#more-home-info').slideToggle();
+            });
+
+            $('.nav-toggle').click(function() {
+                $('.nav-links').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body>
+        <header>
+            <nav class="top-nav">
+                <a class="brand" href="homee.html">
+                    <img src="https://4kwallpapers.com/images/wallpapers/daisy-flowers-blue-4096x2726-12883.jpeg" alt="Bloom & Bliss logo">
+                    <span>Bloom & Bliss</span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-links">
+                    <li><a href="homee.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="flowers.html">Flowers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <section id="Home" class="hero">
+        <div class="hero-copy">
+            <strong>Fresh bouquets made for every moment.</strong>
+            <h1>Bloom & Bliss</h1>
+            <p>Handcrafted floral arrangements delivered with love, color, and care for birthdays, weddings, anniversaries, and everyday joy.</p>
+            <div class="hero-actions">
+                <a href="flowers.html" class="main_btn">Shop Flowers</a>
+                <a href="#more-home-info" class="secondary_btn">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1528045651730-dd9d9180dd53?auto=format&fit=crop&w=1000&q=80" alt="Colorful bouquet" />
+        </div>
+    </section>
+    <section id="more-home-info" class="info-panel">
+        <div>
+            <h2>Where every petal tells a story</h2>
+            <p>At Bloom & Bliss, we design floral arrangements that bring warmth, beauty, and memorable moments to your home. From romantic roses to joyful mixed bouquets, every stem is picked fresh and arranged with care.</p>
+        </div>
+        <div class="feature-grid">
+            <article>
+                <h3>Custom Bouquets</h3>
+                <p>Create a truly personal gift with seasonal florals arranged around your occasion.</p>
+            </article>
+            <article>
+                <h3>Same-Day Delivery</h3>
+                <p>Fresh flower delivery is available locally to make every surprise arrive on time.</p>
+            </article>
+            <article>
+                <h3>Event Styling</h3>
+                <p>Flower arrangements for weddings, parties, and celebrations with elegant, lasting design.</p>
+            </article>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_main">    
+    
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+92 134 56789</a> 
+                <a href="#"><i class="fa-solid fa-phone"></i>+92 134 64906</a> 
+                <div class="social_link">
+                    <a href="bloombliss2024@gmail.com" class="email" target="_blank" rel="noopener noreferrer">
+                        <i class="email"></i>bloombliss2024@gmail.com
+                    </a>
+                </div> </div>
+    
+            <div class="tag"> 
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="https://www.zerrittaflowers.com/?srsltid=AfmBOoqHEk-IOCk5RagZBa8whd84bNF0ZyCRrVJCS4FGDpbq_AjZRZHF" class="website" target="_blank" rel="noopener noreferrer">
+                        <i class="website"></i> Visit Bloom&Bliss Flower Shop
+                    </a>
+                </div>
+            </div> </div></footer>
+    
+</body>
+</html>
